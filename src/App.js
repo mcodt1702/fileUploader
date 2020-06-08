@@ -4,6 +4,14 @@ import SearchBar from './SearchBar/SearchBar';
 import FilterableList from './FilterableList/FilterableList';
 
 class App extends Component {
+constructor(){
+  super()
+  this.state = {
+    searchTerm: '',
+    filterOption: 'All'
+  };
+}
+
   render() {
     return (
       <div className="App">
